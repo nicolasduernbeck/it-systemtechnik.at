@@ -1,0 +1,16 @@
+{
+  "name": "it-systemtechnik",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Technische Dokumentation und Lernunterlagen für IT-Systemtechnik-Lehrlinge in Österreich, erstellt mit VitePress.",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
