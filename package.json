@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "format": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
   "description": "Technische Dokumentation und Lernunterlagen für IT-Systemtechnik-Lehrlinge in Österreich, erstellt mit VitePress.",
   "devDependencies": {
+    "prettier": "^3.5.3",
     "vitepress": "^1.6.3"
   }
 }
