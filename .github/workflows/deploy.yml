@@ -1,0 +1,35 @@
+name: Deploy new version
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build VitePress
+        run: npm run build
+
+      - name: Deploy via rsync
+        uses: burnett01/rsync-deployments@v5.2
+        with:
+          switches: -avzr --delete
+          path: docs/.vitepress/dist/
+          remote_path: /var/www/it-systemtechnik.at/
+          remote_host: ${{ secrets.SERVER_IP }}
+          remote_user: ${{ secrets.SERVER_USER }}
+          remote_key: ${{ secrets.SERVER_SSH_KEY }}
