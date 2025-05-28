@@ -12,6 +12,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Write Impressum.md from secret
+        run: |
+          echo "$IMPRESSUM_MD" > ./docs/impressum.md
+        env:
+          IMPRESSUM_MD: ${{ secrets.IMPRESSUM_MD }}
+
+      - name: Write Datenschutz.md from secret
+        run: |
+          echo "$DATENSCHUTZ_MD" > ./docs/datenschutz.md
+        env:
+          DATENSCHUTZ_MD: ${{ secrets.DATENSCHUTZ_MD }}
+
       - name: Install Dependencies
         run: npm install
         working-directory: ./docs
