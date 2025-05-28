@@ -1,3 +1,7 @@
+---
+title: 'Startseite'
+---
+
 # Willkommen bei it-systemtechnik.at 👋
 
 Diese Seite bietet eine frei zugängliche Sammlung an Lernunterlagen, Anleitungen und Praxisbeispielen für IT-Systemtechnik-Lehrlinge in Österreich.  
