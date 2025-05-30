@@ -67,19 +67,19 @@ export default defineConfig({
       '/': [
         {
           text: 'Netzwerktechnik',
-          link: '/netzwerktechnik/',
+          link: '/lernen/netzwerktechnik/',
           items: [
             {
               text: 'OSI-Modell',
-              link: '/netzwerktechnik/osi',
+              link: '/lernen/netzwerktechnik/osi',
               items: [
-                { text: 'Layer 7', link: '/netzwerktechnik/osi/layer-7' },
-                { text: 'Layer 6', link: '/netzwerktechnik/osi/layer-6' },
-                { text: 'Layer 5', link: '/netzwerktechnik/osi/layer-5' },
-                { text: 'Layer 4', link: '/netzwerktechnik/osi/layer-4' },
-                { text: 'Layer 3', link: '/netzwerktechnik/osi/layer-3' },
-                { text: 'Layer 2', link: '/netzwerktechnik/osi/layer-2' },
-                { text: 'Layer 1', link: '/netzwerktechnik/osi/layer-1' },
+                { text: 'Layer 7', link: '/lernen/netzwerktechnik/osi/layer-7' },
+                { text: 'Layer 6', link: '/lernen/netzwerktechnik/osi/layer-6' },
+                { text: 'Layer 5', link: '/lernen/netzwerktechnik/osi/layer-5' },
+                { text: 'Layer 4', link: '/lernen/netzwerktechnik/osi/layer-4' },
+                { text: 'Layer 3', link: '/lernen/netzwerktechnik/osi/layer-3' },
+                { text: 'Layer 2', link: '/lernen/netzwerktechnik/osi/layer-2' },
+                { text: 'Layer 1', link: '/lernen/netzwerktechnik/osi/layer-1' },
               ],
               collapsed: true,
             },
@@ -98,6 +98,10 @@ export default defineConfig({
     docFooter: {
       next: false,
       prev: false,
+    },
+    footer: {
+      message: '<a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a>',
+      copyright: `© ${new Date().getFullYear()}  IT-Systemtechnik.at`,
     },
   },
 });
