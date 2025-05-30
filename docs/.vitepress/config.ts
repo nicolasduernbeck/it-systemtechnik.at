@@ -31,6 +31,27 @@ export default defineConfig({
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   ],
   themeConfig: {
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: 'Suche',
+            buttonAriaLabel: 'Suche',
+          },
+          modal: {
+            backButtonTitle: 'Zurück',
+            noResultsText: 'Keine Ergebnisse gefunden',
+            resetButtonTitle: 'Suche zurücksetzen',
+            footer: {
+              selectText: 'Wählen',
+              navigateText: 'Navigieren',
+              closeText: 'Schließen',
+            },
+          },
+        },
+      },
+    },
     editLink: {
       pattern: 'https://github.com/nicolasduernbeck/it-systemtechnik.at/edit/main/docs/:path',
       text: 'Bearbeite diese Seite auf GitHub',
