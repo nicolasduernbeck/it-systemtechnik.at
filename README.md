@@ -34,39 +34,7 @@ npm run serve
 
 ### Automatisches Deployment
 
-```bash
-# Deployment läuft automatisch per GitHub Actions bei Push auf main
-# Beispiel workflow Datei: .github/workflows/deploy.yml
-name: Deploy
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - name: Install dependencies
-        run: npm install
-      - name: Build VitePress site
-        run: npm run build
-      - name: Deploy to Server via rsync
-        uses: burnett01/rsync-deployments@v7
-        with:
-          switches: -avz --delete
-          path: ./docs/.vitepress/dist/
-          remote_path: /var/www/it-systemtechnik.at
-          remote_host: ${{ secrets.REMOTE_HOST }}
-          remote_user: ${{ secrets.REMOTE_USER }}
-          remote_key: ${{ secrets.REMOTE_KEY }}
-```
+Deployment läuft automatisch per GitHub Actions bei Push auf main
 
 ### Build Status
 

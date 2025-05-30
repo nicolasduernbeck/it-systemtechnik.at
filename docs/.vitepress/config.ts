@@ -1,9 +1,11 @@
-import { link } from 'fs';
-import { text } from 'stream/consumers';
+import { defineConfig } from 'vitepress';
 
-export default {
+export default defineConfig({
   lang: 'de',
   title: 'IT-Systemtechnik.at',
+  sitemap: {
+    hostname: 'https://it-systemtechnik.at',
+  },
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' }],
@@ -29,10 +31,15 @@ export default {
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   ],
   themeConfig: {
-    nav: [
-      { text: 'Startseite', link: '/' },
-      { text: 'Github', link: 'https://github.com/nicolasduernbeck/it-systemtechnik.at' },
-    ],
+    editLink: {
+      pattern: 'https://github.com/nicolasduernbeck/it-systemtechnik.at/edit/main/docs/:path',
+      text: 'Bearbeite diese Seite auf GitHub',
+    },
+    outline: {
+      label: 'Seiteninhalt',
+    },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/nicolasduernbeck/it-systemtechnik.at' }],
+    nav: [{ text: 'Startseite', link: '/' }],
     sidebar: {
       '/': [
         {
@@ -65,8 +72,9 @@ export default {
         },
       ],
     },
-    footer: {
-      copyright: `© ${new Date().getFullYear()} it-systemtechnik.at`,
+    docFooter: {
+      next: false,
+      prev: false,
     },
   },
-};
+});
