@@ -59,8 +59,7 @@ export default defineConfig({
     outline: {
       label: 'Seiteninhalt',
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/nicolasduernbeck/it-systemtechnik.at' }],
-    nav: [{ text: 'Startseite', link: '/' }],
+    nav: [{ text: 'Startseite', link: 'https://github.com/nicolasduernbeck/it-systemtechnik.at' }],
     sidebar: {
       '/': [
         {
