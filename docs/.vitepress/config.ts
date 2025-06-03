@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   lang: 'de',
-  title: 'IT-Systemtechnik.at',
+  title: 'IT-Systemtechnik.at Lernplattform für IT-Lehrlinge',
   sitemap: {
     hostname: 'https://it-systemtechnik.at',
   },
