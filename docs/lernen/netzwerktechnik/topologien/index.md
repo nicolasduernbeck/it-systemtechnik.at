@@ -8,6 +8,6 @@ Die wichtigsten Topologien sind folgende:
 
 - [Stern](/lernen/netzwerktechnik/topologien/stern)
 - [Bus](/lernen/netzwerktechnik/topologien/bus)
-- [Ring](/lernen/netzwerktechnik/topologien/ring)
-- [Maschen](/lernen/netzwerktechnik/topologien/maschen)
-- [Baum](/lernen/netzwerktechnik/topologien/baum)
+- Ring (Kommt bald)
+- Maschen (Kommt bald)
+- Baum (Kommt bald)
