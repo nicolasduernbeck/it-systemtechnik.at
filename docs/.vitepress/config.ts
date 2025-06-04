@@ -107,12 +107,13 @@ export default defineConfig({
       '/': [
         {
           text: 'Netzwerktechnik',
-          link: '/lernen/netzwerktechnik/',
           items: [
+            { text: 'Einführung', link: '/lernen/netzwerktechnik/' },
             {
               text: 'OSI-Modell',
-              link: '/lernen/netzwerktechnik/osi',
+              collapsed: true,
               items: [
+                { text: 'Einführung', link: '/lernen/netzwerktechnik/osi/' },
                 { text: 'Layer 7', link: '/lernen/netzwerktechnik/osi/layer-7' },
                 { text: 'Layer 6', link: '/lernen/netzwerktechnik/osi/layer-6' },
                 { text: 'Layer 5', link: '/lernen/netzwerktechnik/osi/layer-5' },
@@ -121,19 +122,18 @@ export default defineConfig({
                 { text: 'Layer 2', link: '/lernen/netzwerktechnik/osi/layer-2' },
                 { text: 'Layer 1', link: '/lernen/netzwerktechnik/osi/layer-1' },
               ],
-              collapsed: true,
             },
             {
               text: 'Topologien',
-              link: '/lernen/netzwerktechnik/topologien',
+              collapsed: true,
               items: [
+                { text: 'Einführung', link: '/lernen/netzwerktechnik/topologien/' },
                 { text: 'Stern-Topologie', link: '/lernen/netzwerktechnik/topologien/stern' },
                 { text: 'Bus-Topologie', link: '/lernen/netzwerktechnik/topologien/bus' },
                 // { text: 'Ring-Topologie', link: '/lernen/netzwerktechnik/topologien/ring' },
                 // { text: 'Maschen-Topologie', link: '/lernen/netzwerktechnik/topologien/maschen' },
                 // { text: 'Baum-Topologie', link: '/lernen/netzwerktechnik/topologien/baum' },
               ],
-              collapsed: true,
             },
           ],
           collapsed: true,
