@@ -7,60 +7,69 @@ export default defineConfig({
     hostname: 'https://it-systemtechnik.at',
   },
   head: [
-  // Favicons
-  ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' }],
-  ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' }],
-  ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/apple-touch-icon.png' }],
-  ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicons/android-chrome-192x192.png' }],
-  ['link', { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/favicons/android-chrome-512x512.png' }],
-  ['link', { rel: 'shortcut icon', href: '/favicons/favicon.ico' }],
+    // Favicons
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/apple-touch-icon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicons/android-chrome-192x192.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/favicons/android-chrome-512x512.png' }],
+    ['link', { rel: 'shortcut icon', href: '/favicons/favicon.ico' }],
 
-  // Basis-SEO
-  ['meta', { name: 'description', content: 'Dokumentation für IT-Systemtechnik-Lehrlinge in Österreich' }],
-  ['meta', { name: 'keywords', content: 'IT-Systemtechnik, Lehrlinge, Ausbildung, Linux, Windows, Karriere, Lehre, IT, IT-Lehre' }],
-  ['meta', { name: 'author', content: 'Contributors / it-systemtechnik.at' }],
-  ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-  ['meta', { name: 'robots', content: 'index, follow' }],
-  ['meta', { name: 'language', content: 'de' }],
+    // Basis-SEO
+    ['meta', { name: 'description', content: 'Dokumentation für IT-Systemtechnik-Lehrlinge in Österreich' }],
+    [
+      'meta',
+      {
+        name: 'keywords',
+        content: 'IT-Systemtechnik, Lehrlinge, Ausbildung, Linux, Windows, Karriere, Lehre, IT, IT-Lehre',
+      },
+    ],
+    ['meta', { name: 'author', content: 'Contributors / it-systemtechnik.at' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+    ['meta', { name: 'robots', content: 'index, follow' }],
+    ['meta', { name: 'language', content: 'de' }],
 
-  // Open Graph
-  ['meta', { property: 'og:locale', content: 'de_DE' }],
-  ['meta', { property: 'og:type', content: 'website' }],
-  ['meta', { property: 'og:title', content: 'IT-Systemtechnik.at – Doku für Lehrlinge' }],
-  ['meta', { property: 'og:description', content: 'Dokumentation für IT-Systemtechnik-Lehrlinge in Österreich.' }],
-  ['meta', { property: 'og:url', content: 'https://it-systemtechnik.at' }],
-  ['meta', { property: 'og:site_name', content: 'IT-Systemtechnik.at' }],
-  ['meta', { property: 'og:image', content: 'https://it-systemtechnik.at/favicons/android-chrome-512x512.png' }],
+    // Open Graph
+    ['meta', { property: 'og:locale', content: 'de_DE' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'IT-Systemtechnik.at – Doku für Lehrlinge' }],
+    ['meta', { property: 'og:description', content: 'Dokumentation für IT-Systemtechnik-Lehrlinge in Österreich.' }],
+    ['meta', { property: 'og:url', content: 'https://it-systemtechnik.at' }],
+    ['meta', { property: 'og:site_name', content: 'IT-Systemtechnik.at' }],
+    ['meta', { property: 'og:image', content: 'https://it-systemtechnik.at/favicons/android-chrome-512x512.png' }],
 
-  // Twitter Cards
-  ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-  ['meta', { name: 'twitter:title', content: 'IT-Systemtechnik.at – Doku für Lehrlinge' }],
-  ['meta', { name: 'twitter:description', content: 'Ausbildungsmaterial für IT-Systemtechnik-Lehrlinge in Österreich.' }],
-  ['meta', { name: 'twitter:image', content: 'https://it-systemtechnik.at/favicons/android-chrome-512x512.png' }],
+    // Twitter Cards
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'IT-Systemtechnik.at – Doku für Lehrlinge' }],
+    [
+      'meta',
+      { name: 'twitter:description', content: 'Ausbildungsmaterial für IT-Systemtechnik-Lehrlinge in Österreich.' },
+    ],
+    ['meta', { name: 'twitter:image', content: 'https://it-systemtechnik.at/favicons/android-chrome-512x512.png' }],
 
-  // Strukturierte Daten (JSON-LD)
-  [
-    'script',
-    { type: 'application/ld+json' },
-    JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "IT-Systemtechnik.at",
-      "url": "https://it-systemtechnik.at",
-      "description": "Dokumentation und Ausbildungsmaterial für IT-Systemtechnik-Lehrlinge in Österreich.",
-      "inLanguage": "de",
-      "publisher": {
-        "@type": "Organization",
-        "name": "IT-Systemtechnik.at",
-        "url": "https://it-systemtechnik.at",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://it-systemtechnik.at/favicons/android-chrome-512x512.png"
-        }
-      }
-    })
-  ]
-],
+    // Strukturierte Daten (JSON-LD)
+    [
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'IT-Systemtechnik.at',
+        url: 'https://it-systemtechnik.at',
+        description: 'Dokumentation und Ausbildungsmaterial für IT-Systemtechnik-Lehrlinge in Österreich.',
+        inLanguage: 'de',
+        publisher: {
+          '@type': 'Organization',
+          name: 'IT-Systemtechnik.at',
+          url: 'https://it-systemtechnik.at',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://it-systemtechnik.at/favicons/android-chrome-512x512.png',
+          },
+        },
+      }),
+    ],
+  ],
   themeConfig: {
     search: {
       provider: 'local',
@@ -111,6 +120,18 @@ export default defineConfig({
                 { text: 'Layer 3', link: '/lernen/netzwerktechnik/osi/layer-3' },
                 { text: 'Layer 2', link: '/lernen/netzwerktechnik/osi/layer-2' },
                 { text: 'Layer 1', link: '/lernen/netzwerktechnik/osi/layer-1' },
+              ],
+              collapsed: true,
+            },
+            {
+              text: 'Topologien',
+              link: '/lernen/netzwerktechnik/topologien',
+              items: [
+                { text: 'Stern-Topologie', link: '/lernen/netzwerktechnik/topologien/stern' },
+                { text: 'Bus-Topologie', link: '/lernen/netzwerktechnik/topologien/bus' },
+                // { text: 'Ring-Topologie', link: '/lernen/netzwerktechnik/topologien/ring' },
+                // { text: 'Maschen-Topologie', link: '/lernen/netzwerktechnik/topologien/maschen' },
+                // { text: 'Baum-Topologie', link: '/lernen/netzwerktechnik/topologien/baum' },
               ],
               collapsed: true,
             },
