@@ -6,8 +6,8 @@ Netzwerktopologien beschreiben die Struktur und den Aufbau eines Netzwerks - als
 
 Die wichtigsten Topologien sind folgende:
 
-- [Stern](/lernen/netzwerktechnik/topologien/stern)
-- [Bus](/lernen/netzwerktechnik/topologien/bus)
+- [Stern](/netzwerktechnik/topologien/stern)
+- [Bus](/netzwerktechnik/topologien/bus)
 - Ring (Kommt bald)
 - Maschen (Kommt bald)
 - Baum (Kommt bald)
