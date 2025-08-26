@@ -32,12 +32,5 @@ jobs:
         run: npm run build
         working-directory: ./docs
 
-      - name: Deploy with rsync
-        uses: burnett01/rsync-deployments@7.0.2
-        with:
-          switches: -avzr --delete
-          path: docs/.vitepress/dist/
-          remote_path: /var/www/it-systemtechnik.at/
-          remote_host: ${{ secrets.SERVER_IP }}
-          remote_user: ${{ secrets.SERVER_USER }}
-          remote_key: ${{ secrets.SERVER_SSH_KEY }}
+      - name: Copy Build to Webroot
+        run: cp -r ./docs/.vitepress/dist/* /var/www/it-systemtechnik.at/
