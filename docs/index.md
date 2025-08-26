@@ -23,7 +23,7 @@ Weitere Inhalte wie Prüfungsfragen, Tipps für die LAP oder allgemeines IT-Wiss
 Bitte beachte:
 
 > **Es dürfen keine urheberrechtlich geschützten Inhalte hochgeladen werden!**  
-> Keine offiziellen Prüfungen, Schulunterlagen oder kommerzielle Materialien.  
+> Keine offiziellen Prüfungen, Schulunterlagen oder kommerzielle Materialien  
 > Ziel ist eine offene, freiwillige Lernplattform – **nicht** ein Ersatz für offizielle Lehrpläne.
 
 ## 🛠️ Mitmachen
