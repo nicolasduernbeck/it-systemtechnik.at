@@ -16,7 +16,7 @@ export default defineConfig({
     ['link', { rel: 'shortcut icon', href: '/favicons/favicon.ico' }],
 
     // Basis-SEO
-    ['meta', { name: 'description', content: 'Dokumentation für IT-Systemtechnik-Lehrlinge in Österreich' }],
+    ['meta', { name: 'description', content: 'Dokumentation für IT & Systemtechnik' }],
     [
       'meta',
       {
@@ -32,15 +32,15 @@ export default defineConfig({
     // Open Graph
     ['meta', { property: 'og:locale', content: 'de_DE' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'IT-Systemtechnik.at – Doku für Lehrlinge' }],
-    ['meta', { property: 'og:description', content: 'Dokumentation für IT-Systemtechnik-Lehrlinge in Österreich.' }],
+    ['meta', { property: 'og:title', content: 'IT-Systemtechnik.at – Freies Wissen für IT & Systemtechnik' }],
+    ['meta', { property: 'og:description', content: 'Dokumentation für IT & Systemtechnik' }],
     ['meta', { property: 'og:url', content: 'https://it-systemtechnik.at' }],
     ['meta', { property: 'og:site_name', content: 'IT-Systemtechnik.at' }],
     ['meta', { property: 'og:image', content: 'https://it-systemtechnik.at/favicons/android-chrome-512x512.png' }],
 
     // Twitter Cards
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'IT-Systemtechnik.at – Doku für Lehrlinge' }],
+    ['meta', { name: 'twitter:title', content: 'IT-Systemtechnik.at – Freies Wissen für IT & Systemtechnik' }],
     [
       'meta',
       { name: 'twitter:description', content: 'Ausbildungsmaterial für IT-Systemtechnik-Lehrlinge in Österreich.' },
@@ -56,7 +56,7 @@ export default defineConfig({
         '@type': 'WebSite',
         name: 'IT-Systemtechnik.at',
         url: 'https://it-systemtechnik.at',
-        description: 'Dokumentation und Ausbildungsmaterial für IT-Systemtechnik-Lehrlinge in Österreich.',
+        description: 'Dokumentation und Ausbildungsmaterial für IT & Systemtechnik.',
         inLanguage: 'de',
         publisher: {
           '@type': 'Organization',
